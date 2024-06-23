@@ -1,13 +1,33 @@
 
+@font-face {
+    font-family: block_letters;
+    src: url(./block_letters.otf);
+}
 
 body {
     margin: 0px;
     background-color: black;
     overflow: hidden;
+    width: 100vw;
+}
+
+h1 {
+    color: white;
 }
 
 * {
     position: absolute;
+    font-family: block_letters;
+}
+
+#leftScore {
+    top: 30px;
+    right: calc(30px + 50%);
+}
+
+#rightScore {
+    top: 30px;
+    left: calc(50% + 30px);
 }
 
 .ball {

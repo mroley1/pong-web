@@ -37,12 +37,21 @@ export default class Paddle {
     }
     
     setY(y) {
+        if (y + (this.height / 2) > window.innerHeight) {
+            y = window.innerHeight - (this.height / 2)
+        } else if (y - (this.height / 2) < 0) {
+            y = this.height / 2
+        }
         this.posY = y
         this.element.style.top = (y - (this.height / 2)) + "px"
     }
     
     setAxis(axisX) {
         this.setX(axisX)
+    }
+    
+    center() {
+        this.setY(window.innerHeight / 2)
     }
     
     checkY(y) {

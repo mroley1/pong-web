@@ -39,20 +39,4 @@ export default class Ball {
         this.posY = y
         this.element.style.top = (y - this.radius) + "px"
     }
-    
-    top() {
-        return this.posY - this.radius
-    }
-    
-    right() {
-        return this.posX + this.radius
-    }
-    
-    bottom() {
-        return this.posY + this.radius
-    }
-    
-    left() {
-        return this.posX - this.radius
-    }
 }
