@@ -1,0 +1,19 @@
+
+
+body {
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+
+* {
+    position: absolute;
+}
+
+.ball {
+    background-color: white;
+}
+
+.paddle {
+    background-color: white;
+}
