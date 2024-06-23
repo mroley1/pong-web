@@ -4,6 +4,7 @@ export default class Paddle {
     posY
     width
     height
+    velocity
     
     constructor(width) {
         this.element = document.createElement("div")
@@ -12,6 +13,7 @@ export default class Paddle {
         this.setWidth(width)
         this.setHeight(250)
         this.setPos(0, 0)
+        this.velocity = 0
     }
     
     setWidth(width) {
