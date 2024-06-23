@@ -45,9 +45,9 @@ export default class Paddle {
     
     checkY(y) {
         if (y > this.posY - (this.height / 2) && y < this.posY + (this.height / 2)) {
-            return true
+            return ((2 * Math.PI) / 3) * ((y - this.posY) / this.height)
         } else {
-            return false
+            return null
         }
     }
 }
